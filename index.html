@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kavya | Aspiring Full Stack Developer</title>
+<meta name="description" content="Portfolio of Kavya, a B.Tech graduate learning full stack web development.">
+<style>
+  :root {
+    --bg: #eef2f7;
+    --ink: #14213d;
+    --muted: #4a5671;
+    --accent: #2b4eff;
+    --line: #c9d3e3;
+    --mark: #ffd166;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 22px; }
+  nav { padding: 18px 0; border-bottom: 1px solid var(--line); }
+  nav .wrap { display: flex; gap: 22px; flex-wrap: wrap; }
+  nav a { color: var(--ink); text-decoration: none; font-weight: 600; }
+  nav a:hover { color: var(--accent); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+  header { padding: 72px 0 56px; }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.6rem, 9vw, 4.6rem);
+    line-height: 1.05;
+    margin: 0 0 18px;
+    letter-spacing: -0.02em;
+  }
+  .lead { font-size: 1.2rem; color: var(--muted); max-width: 34em; margin: 0 0 28px; }
+  .btn {
+    display: inline-block; padding: 12px 22px; border-radius: 8px;
+    background: var(--accent); color: #fff; text-decoration: none; font-weight: 600;
+  }
+  .btn:hover { background: #1d38c4; }
+  .btn.ghost { background: transparent; color: var(--ink); border: 2px solid var(--ink); margin-left: 8px; }
+  .btn.ghost:hover { background: var(--ink); color: #fff; }
+
+  section { padding: 44px 0; border-top: 1px solid var(--line); }
+  h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.8rem; margin: 0 0 16px; }
+  p { margin: 0 0 14px; max-width: 38em; }
+
+  .skills { list-style: none; margin: 0; padding: 0; }
+  .skills li {
+    display: flex; justify-content: space-between; gap: 12px;
+    padding: 12px 0; border-bottom: 1px solid var(--line);
+  }
+  .tag { font-size: 0.9rem; padding: 2px 12px; border-radius: 999px; white-space: nowrap; }
+  .done { background: var(--ink); color: #fff; }
+  .learning { background: var(--mark); color: var(--ink); }
+
+  .timeline { margin: 0; padding: 0; list-style: none; }
+  .timeline li { padding: 0 0 18px 18px; border-left: 3px solid var(--accent); margin-bottom: 4px; }
+  .timeline strong { display: block; }
+  .timeline span { color: var(--muted); }
+
+  .project { border: 2px solid var(--ink); border-radius: 10px; padding: 18px 20px; background: #fff; }
+  .project h3 { margin: 0 0 6px; }
+  .project p { margin: 0; color: var(--muted); }
+
+  .contact a { color: var(--accent); font-weight: 600; }
+  footer { padding: 28px 0 40px; color: var(--muted); border-top: 1px solid var(--line); font-size: 0.9rem; }
+
+  @media (max-width: 480px) {
+    .btn.ghost { margin: 10px 0 0; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#journey">Journey</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <h1>Kavya</h1>
+    <p class="lead">I am training to become a full stack developer, and I am building my first websites with HTML, CSS and Bootstrap.</p>
+    <a class="btn" href="#contact">Contact me</a>
+    <a class="btn ghost" href="#projects">See my projects</a>
+  </div>
+</header>
+
+<main>
+  <section id="about">
+    <div class="wrap">
+      <h2>About me</h2>
+      <p>I completed my B.Tech in 2024 and worked for about a year and a half in a non-IT role before moving into software. I am now learning full stack development and looking for my first role as a frontend or web developer.</p>
+      <p>I like turning a plain idea into a page people can open and use. I practise a little every day and I am open to internships and fresher roles.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li><span>HTML5</span><span class="tag done">Completed</span></li>
+        <li><span>CSS</span><span class="tag done">Completed</span></li>
+        <li><span>Bootstrap</span><span class="tag done">Completed</span></li>
+        <li><span>JavaScript</span><span class="tag learning">Learning</span></li>
+        <li><span>Python</span><span class="tag learning">Learning</span></li>
+        <li><span>SQL</span><span class="tag learning">Learning</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="journey">
+    <div class="wrap">
+      <h2>Journey</h2>
+      <ul class="timeline">
+        <li><strong>Full Stack Developer program, NxtWave</strong><span>2026 to present</span></li>
+        <li><strong>B.Tech</strong><span>Completed 2024</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>This portfolio website</h3>
+        <p>Built with HTML and CSS and hosted on GitHub Pages. I will add my next projects here as I finish them.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile">linkedin.com/in/your-profile</a></p>
+      <p>GitHub: <a href="https://github.com/your-username">github.com/your-username</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Built by Kavya with HTML and CSS.</div>
+</footer>
+
+</body>
+</html>
